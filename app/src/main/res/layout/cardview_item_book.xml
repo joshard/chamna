@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="210dp"
+    android:id="@+id/cardView_id"
+    android:layout_margin="3dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    cardview:cardCornerRadius="4dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<ImageView
+    android:id="@+id/image_id"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:scaleType="centerCrop"
+    android:background="#2d242d"
+    android:tooltipText="@string/app_name"
+    />
+    <TextView
+    android:textColor="#2d242d"
+    android:id="@+id/item_bonus"
+    android:gravity="center"
+    android:textSize="13sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Item Title"
+
+    />
+    <TextView
+        android:textColor="#2d242d"
+        android:id="@+id/item_id"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Item Title"
+
+        />
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

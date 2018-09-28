@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.root.chamna.MainActivity">
+    <group android:orderInCategory="100" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="102"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="102"
+        android:title="Refresh"
+        android:icon="@drawable/share"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_credit"
+        android:orderInCategory="102"
+        android:title="Bonus Account"
+        android:icon="@drawable/bank"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/action_log"
+        android:orderInCategory="102"
+        android:title="Status"
+        app:showAsAction="never"
+        />
+</menu>

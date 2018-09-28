@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#006633">
+
+        <ImageView
+            android:id="@+id/itemthumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logosm" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemthumbnail"
+            android:background="#ff6600"
+            android:elevation="4dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/profile_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Passion Fruits"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:id="@+id/txtcat"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Wandegeya"
+                android:layout_below="@+id/txtcat"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:id="@+id/txtcategory"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemthumbnail"
+            android:layout_alignParentStart="true"
+            android:text="20,000 UGX"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:background="#ff6600"
+            android:padding="15dp"/>
+
+
+        <TextView
+            android:id="@+id/tvbonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#006633"
+            android:padding="15dp"
+            android:text="2,000 UGX"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemthumbnail"
+            android:layout_alignParentStart="true"
+            android:text="Price"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvbonus"
+            android:layout_alignStart="@+id/tvbonus"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginLeft="15dp"
+            android:text="Bonus" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/first_layout"
+        android:layout_marginTop="10dp"
+        android:text="Order now"
+        android:background="#fff"
+        android:textColor="#006633"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/paysm"
+        />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/first_layout"
+        android:drawableTop="@drawable/commision"
+        android:background="#fff"
+        android:textColor="#006633"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+        android:layout_centerHorizontal="true"
+        android:text="Verify Item"
+        android:background="#fff"
+        android:textColor="#006633"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/buyitem"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/order_id"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/txtdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#006633"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

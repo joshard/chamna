@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 public class contacts2 extends Activity{
     private static final int RESULT_PICK_CONTACT = 85500;
@@ -18,6 +19,15 @@ public class contacts2 extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contacts2);
+        Button btn3 = (Button)findViewById(R.id.button2);
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(contacts2.this, com.example.root.mapdemo.MainActivity.class));
+                //com.example.root.mapdemo.MainActivity
+            }
+        });
         textView1 = (TextView) findViewById(R.id.textView1);
         textView2 = (TextView) findViewById(R.id.textView2);
     }

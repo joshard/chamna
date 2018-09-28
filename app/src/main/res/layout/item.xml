@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6600">
+
+        <ImageView
+            android:id="@+id/itemthumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logosm" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemthumbnail"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:text="20,000 UGX"
+            android:textColor="#006633"
+            android:textSize="20sp"
+             />
+
+
+        <TextView
+            android:id="@+id/txtcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemthumbnail"
+            android:layout_centerHorizontal="true"
+            android:text="Passion Fruits"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="5dp"
+              android:text="Wandegeya"
+              android:layout_below="@+id/txtcat"
+              android:textSize="15sp"
+              android:textColor="#fff"
+              android:id="@+id/txtcategory"
+              />
+
+
+
+
+        <TextView
+            android:id="@+id/tvbonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#006633"
+            android:padding="10dp"
+            android:text="2,000 UGX"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/first_layout"
+        android:layout_marginTop="10dp"
+        android:text="Order now"
+        android:background="#fff"
+        android:textColor="#006633"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/paysm"
+        />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/first_layout"
+        android:drawableTop="@drawable/commision"
+        android:background="#fff"
+        android:textColor="#006633"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+        android:layout_centerHorizontal="true"
+        android:text="Contact Seller"
+        android:background="#fff"
+        android:textColor="#006633"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/viewmore"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
